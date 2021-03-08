@@ -32,7 +32,7 @@ body {
 
 .showcase:before {
   content: "";
-  background: url(../img/h1_hero.jpg);
+  background: url(../img/hero.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -67,9 +67,9 @@ body {
   border: none;
   background-color: var(--primary-color);
   color: #fff;
+  background-color: rgba(0, 244, 252, 0.178);
   padding: 0.75rem 1.5rem;
   margin-top: 1rem;
-  /* width: 20%; */
   text-decoration: none;
   transition: opacity 1s ease-in;
 }
