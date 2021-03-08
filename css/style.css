@@ -82,7 +82,7 @@ body {
 } */
 
 /* MEDIA QUERIES */
-@media(max-width:1024px) {
+/* @media(max-width:1024px) {
   .showcase .showcase-inner {
     display: flex;
     flex-direction: column;
@@ -91,7 +91,7 @@ body {
     text-align: center;
     height: 100%;
   }
-}
+} */
 
 @media(max-width:768px) {
   #about .container .mb-5 {
