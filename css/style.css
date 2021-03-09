@@ -35,6 +35,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -76,10 +77,34 @@ body {
   color: inherit;
 }
 
-/* #about .container .row .col-md-7 img {
+#what {
+  /* background-attachment: fixed; */
+}
+
+#what .container .row .card-deck .card {
+  background-color: var(--overlay-color);
+  color: #fff;
+}
+
+#what .container .row .card-deck .card:hover {
+  background-color: var(--overlay-color) !important;
+  color: #fff !important;
+  opacity: card 0.75 !important;
+  cursor: pointer;
+  transition: 1.5s all ease-in;
+}
+
+#work .container .row .card-deck img {
   width: 100%;
-  height:90%;
-} */
+  height: 100%;
+  opacity: 0.60;
+}
+
+#work .container .row .card-deck img:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 1.2s ease-in;
+}
 
 /* MEDIA QUERIES */
 /* @media(max-width:1024px) {
@@ -93,8 +118,37 @@ body {
   }
 } */
 
+
+
 @media(max-width:768px) {
   #about .container .mb-5 {
     margin-bottom: 0 !important;
   }
+  #what .container .py-5 {
+    padding-top: 10px !important;
+  }
+  #what .container .row .card-deck .card {
+    cursor: pointer;
+    border: none !important;
+    background-color: var(--overlay-color) !important;
+    opacity: card 0.75 !important;
+  }
+  #work .container .py-5 {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 20px !important;
+  }
+  #work .container .row p {
+    /* padding-left: 10px !important; */
+    text-align: center;
+  }
+  #work .container .row .card-deck img {
+    opacity: 1;
+  }
 }
+
+@media(min-width:768px) {
+  #about .container .mb-5 {
+    margin-bottom: 40px !important;
+  }
+} 

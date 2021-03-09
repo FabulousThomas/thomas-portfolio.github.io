@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -24,9 +25,9 @@
       <div>
         <div>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#what">What I Do?</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
@@ -39,11 +40,14 @@
       <!-- <h1>Portfolio</h1> -->
       <h5 class="">Hello, I'm</h5>
       <h3 class="display-3">Mba Thomas</h3>
-      <p>I'm a Software Engineer</p>
+      <p>I'm a Software Engineer.
+        <br>Experienced Full Stack Web and Java Developer
+      </p>
       <a href="#about" class="btn">About Me</a>
     </div>
   </header>
 
+  <!-- ABOUT ME  -->
   <section id="about" class="pt-5 pb-3">
     <div class="container">
       <h2 class="text-center mb-5">About Me</h2>
@@ -52,7 +56,9 @@
           <h4 class="mt-5 font-weight-bold">I'm a Software Engineer</h4>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam tempore expedita quibusdam repellendus
             necessitatibus nesciunt, dolorum eos minus autem repellat laudantium ea doloremque impedit sequi maiores
-            optio voluptate ipsa aperiam.</p>
+            optio voluptate ipsa aperiam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste at nam libero
+            fuga impedit assumenda? Natus quo doloremque, nemo vero quam a numquam, consectetur dolor debitis autem,
+            dolorem molestias repellat.</p>
         </div>
         <div class="col-md-7">
           <img src="img/p.jpg" alt="" class="img-fluid">
@@ -61,6 +67,61 @@
     </div>
   </section>
 
+  <!-- WHAT I DO -->
+  <section id="what" class="py-5 mt-4 bg-dark">
+    <div class="container">
+      <h2 class="text-center text-white py-5">What I Do?</h2>
+      <div class="row">
+        <div class="card-deck">
+          <div class="card bg-dark">
+            <div class="card-body">
+              <i class="fa fa-desktop fa-4x py-4 text-center"></i>
+              <h4 class="card-title">Full Stack Development</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, commodi iste
+                deserunt molestiae quod!</p>
+            </div>
+          </div>
+
+          <div class="card bg-dark">
+            <div class="card-body">
+              <i class="fa fa-code fa-4x py-4"></i>
+              <h4 class="card-title">Java App Development</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, commodi iste
+                deserunt molestiae quod!</p>
+            </div>
+          </div>
+
+          <div class="card bg-dark">
+            <div class="card-body">
+              <i class="fa fa-laptop fa-4x py-4 text-center"></i>
+              <h4 class="card-title">Responsive Web Design</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, commodi iste
+                deserunt molestiae quod!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="py-5">
+    <div class="container">
+      <h2 class="text-center py-5">What Have I Built?</h2>
+      <div class="row">
+        <p>I design and develop experiences that make people's lives simple</p>
+        <div class="card-deck">
+          <div class="card">
+            <img src="img/hero_portfolio.jpg" alt="">
+          </div>
+
+          <div class="card">
+            <img src="img/hero.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"
