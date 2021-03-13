@@ -125,6 +125,11 @@ footer .container > p {
   font-size: 0.85rem;
 }
 
+footer .container > p > a {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
 
 /* MEDIA QUERIES */
 /* @media(max-width:1024px) {
