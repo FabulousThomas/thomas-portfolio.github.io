@@ -77,6 +77,10 @@ body {
   color: inherit;
 }
 
+#about .container .row .col-md-5 p {
+  line-height: 1.45rem;
+}
+
 #what .container .row .card-deck .card {
   background-color: var(--overlay-color);
   color: #fff;
@@ -172,6 +176,9 @@ footer .container > p > a {
   }
   #work .container .row .card-deck .card img {
     opacity: 1;
+  }
+  #work .container .row .mt-4 {
+    margin-top: 0% !important;
   }
   #contact {
     margin-top: 0% !important;
