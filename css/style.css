@@ -108,6 +108,7 @@ body {
 input[type=text],
 input[type=email],
 input[type=tel],
+form .form-group .input-group select,
 form .form-group .input-group textarea {
   background: #222222 !important;
   border: none !important;
@@ -116,6 +117,11 @@ form .form-group .input-group textarea {
 }
 form .form-group .input-group textarea {
   height: 100px !important;
+}
+form .form-group .input-group select {
+  width: 35rem;
+  color: #fff;
+  padding: 0.50rem 1rem;
 }
 
 footer {
