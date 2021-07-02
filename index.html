@@ -68,7 +68,7 @@
   <section id="what" class="py-5 mt-4 bg-dark">
     <div class="container">
       <h2 class="text-center text-white py-5">What I Do?</h2>
-      <div class="row">
+      <!-- <div class="row"> -->
         <div class="card-deck">
           <div class="card bg-dark">
             <div class="card-body">
@@ -106,7 +106,89 @@
             </div>
           </div>
         </div>
+      <!-- </div> -->
+
+      <h2 class="text-center text-white pt-5 pb-2">My Skills</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-3 mx-4 p-0 text-white">
+          <h5 class="text-center mt-3">Front-End</h5>
+
+            <div class="d-flex">
+              <p class="flex">html</p>
+              <p class="">100%</p>
+            </div>
+            <div class="progress mb-1">
+              <div class="progress-bar bg-success" style="width: 105%;"></div>
+            </div>
+
+          <div class="d-flex">
+              <p class="flex">css</p>
+              <p class="">90%</p>
+            </div>
+            <div class="progress mb-1">
+              <div class="progress-bar bg-success" style="width: 90%;"></div>
+            </div>
+
+            <div class="d-flex">
+              <p class="flex">bootstrap</p>
+              <p class="">85%</p>
+            </div>
+            <div class="progress mb-1">
+              <div class="progress-bar bg-success" style="width: 85%;"></div>
+            </div>
+
+        </div>
+        <div class="col-md-3 mx-4 p-0 text-white">
+          <h5 class="text-center mt-3">Back-End</h5>
+
+          <div class="d-flex">
+            <p class="flex">php</p>
+            <p class="">65%</p>
+          </div>
+          <div class="progress mb-1">
+            <div class="progress-bar bg-success" style="width: 65%;"></div>
+          </div>
+
+          <div class="d-flex">
+            <p class="flex">java</p>
+            <p class="">95%</p>
+          </div>
+          <div class="progress mb-1">
+            <div class="progress-bar bg-success" style="width: 95%;"></div>
+          </div>
+
+          <div class="d-flex">
+            <p class="flex">javascript</p>
+            <p class="">75%</p>
+          </div>
+          <div class="progress mb-1">
+            <div class="progress-bar bg-success" style="width: 75%;"></div>
+          </div>
+
+        </div>
+        <div class="col-md-3 mx-4 p-0 text-white">
+          <h5 class="text-center mt-3">Database</h5>
+
+          <div class="d-flex">
+            <p class="flex">mysql</p>
+            <p class="">95%</p>
+          </div>
+          <div class="progress mb-1">
+            <div class="progress-bar bg-success" style="width: 95%;"></div>
+          </div>
+
+          <div class="d-flex">
+            <p class="flex">microsoft sql</p>
+            <p class="">96%</p>
+          </div>
+          <div class="progress mb-1">
+            <div class="progress-bar bg-success" style="width: 96%;"></div>
+          </div>
+
+        </div>
       </div>
+      
+       
     </div>
   </section>
 
@@ -172,12 +254,14 @@
             </div>
             <div class="form-group">
               <div class="input-group input-group-lg">
-                <select name="service" id="service">
+                <select id="service">
                   <option value="select">-----Select Service-----</option>
-                  <option value="select">Web Development</option>
-                  <option value="select">Mobile App</option>
-                  <option value="select">Web Design</option>
-                  <option value="select">QRCode Servive</option>
+                  <option name="Web Dev" value="select">Web Development</option>
+                  <option name="Mobile App" value="select">Mobile App</option>
+                  <option name="Web Design" value="select">Web Design</option>
+                  <option name="QRcode services" value="select">QRCode Servive</option>
+                  <option name="BarCode Services" value="select">BarCode Servive</option>
+                  <option name="Desktop App" value="select">Desktop App</option>
                 </select>
               </div>
             </div>

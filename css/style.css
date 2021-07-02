@@ -81,17 +81,36 @@ body {
   line-height: 1.45rem;
 }
 
-#what .container .row .card-deck .card {
+#what .container  .card-deck .card {
   background-color: var(--overlay-color);
   color: #fff;
 }
 
-#what .container .row .card-deck .card:hover {
+#what .container .card-deck .card:hover {
   background-color: var(--overlay-color) !important;
   color: #fff !important;
   opacity: card 0.75 !important;
   cursor: pointer;
   transition: 1.5s all ease-in;
+}
+
+#what .container .row .d-flex {
+  font-size: .8rem;
+  display: flex;
+}
+#what .container .row .d-flex .flex {
+  flex: 2;
+}
+#what .container .row .d-flex p {
+  padding: 1%;
+  margin: 0%;
+}
+#what .container .row .progress {
+  background-color: var(--overlay-color) !important;
+  height: 10px;
+}
+#what .container .row .progress .progress-bar {
+  background-color: #fff !important;
 }
 
 #work .container .row .card-deck .card img {
@@ -120,6 +139,7 @@ form .form-group .input-group textarea {
 }
 form .form-group .input-group select {
   width: 35rem;
+  background: #222222 !important;
   color: #fff;
   padding: 0.50rem 1rem;
 }
