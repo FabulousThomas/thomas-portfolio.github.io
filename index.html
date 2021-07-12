@@ -5,11 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.css"> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/menu.css">
   <title>Portfolio</title>
@@ -39,12 +38,16 @@
   <header class="showcase">
     <div class="container showcase-inner">
       <!-- <h1>Portfolio</h1> -->
-      <h5 class="">Hello, I'm</h5>
-      <h3 class="display-3">Mba Thomas</h3>
-      <p>I'm a Software Engineer.
-        <br>Experienced Full Stack Web and Java Developer
-      </p>
-      <a href="#about" class="btn btn-about">About Me</a>
+      <div class="slider-wrapper">
+        <div class="showcase-inner-info">
+          <h5 class="">Hello, I'm</h5>
+          <h3 class="display-3">Mba Thomas</h3>
+          <p>I'm a Software Engineer.
+            <br>Experienced Full Stack Web and Java Developer
+          </p>
+          <a href="#about" class="btn btn-about">About Me</a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -52,90 +55,115 @@
   <section id="about" class="pt-5 pb-3">
     <div class="container">
       <h2 class="text-center mb-5">About Me</h2>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-md-5">
           <h4 class="mt-5 font-weight-bold">I'm a Software Engineer</h4>
-          <p>I design responsive websites and softwares. From Landing pages, School and hospital management systems to e-commerce webapps, Desktop apps to mobile apps. I love growing teams, learning, teaching engineers and collaborating with people to provide solution(s) to real-world problems. I'm here to help companies and software startups get things done. Do you want to create, or build something for your business or startup or simply want to have a chat? Please do reach out to me on my social media handles or send me an email bellow the page.</p>
+          <p>I design responsive websites and softwares. From Landing pages, School and hospital management systems to
+            e-commerce webapps, Desktop apps to mobile apps. I love growing teams, learning, teaching engineers and
+            collaborating with people to provide solution(s) to real-world problems. I'm here to help companies and
+            software startups get things done. Do you want to create, or build something for your business or startup or
+            simply want to have a chat? Please do reach out to me on my social media handles or send me an email bellow
+            the page.</p>
+            <p class="lead text-center">
+              <a href="#contact"><i class="fas fa-arrow-down"></i></a>
+            </p>
+            
         </div>
         <div class="col-md-7">
-          <img src="img/p.jpg" alt="" class="img-fluid">
+          <div class="container slider-wrapper">
+            <div class="col-md-12 slider-image">
+              <img src="img/p.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-12 slider-image">
+              <img src="img/p1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-12 slider-image">
+              <img src="img/prf.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- WHAT I DO -->
-  <section id="what" class="py-5 mt-4 bg-dark">
+  <section id="what" class="pt-5 pb-2 mt-4 bg-dark">
     <div class="container">
       <h2 class="text-center text-white py-5">What I Do?</h2>
       <!-- <div class="row"> -->
-        <div class="card-deck">
-          <div class="card bg-dark">
-            <div class="card-body">
-              <i class="fa fa-desktop fa-4x py-4 text-center"></i>
-              <h4 class="card-title">Full Stack Development</h4>
-              <p class="card-text">From landing pages, School and hospital management systems to e-commerce webapps, Desktop apps to mobile apps and their back-ends</p>
-              <!-- <details>
+      <div class="card-deck">
+        <div class="card bg-dark">
+          <div class="card-body">
+            <i class="fa fa-desktop fa-4x py-4 text-center"></i>
+            <h4 class="card-title">Full Stack Development</h4>
+            <p class="card-text">From landing pages, School and hospital management systems to e-commerce webapps,
+              Desktop apps to mobile apps and their back-ends</p>
+            <!-- <details>
                 <summary class="mb-3">Read More</summary>
                 <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eveniet ex corporis iure corrupti vitae repudiandae reprehenderit, rem deserunt quod non aspernatur, nobis debitis atque alias consequuntur? At, earum inventore.</article>
               </details> -->
-            </div>
-          </div>
-
-          <div class="card bg-dark">
-            <div class="card-body">
-              <i class="fa fa-code fa-4x py-4"></i>
-              <h4 class="card-title">Java App Development</h4>
-              <p class="card-text">I develop responsive desktop and mobile apps</p>
-              <!-- <details>
-                <summary class="mb-3">Read More</summary>
-                <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eveniet ex corporis iure corrupti vitae repudiandae reprehenderit, rem deserunt quod non aspernatur, nobis debitis atque alias consequuntur? At, earum inventore.</article>
-              </details> -->
-            </div>
-          </div>
-
-          <div class="card bg-dark">
-            <div class="card-body">
-              <i class="fa fa-laptop fa-4x py-4 text-center"></i>
-              <h4 class="card-title">Responsive Web Design</h4>
-              <p class="card-text">I design responsive websites and develop experiences that make people's lives simple</p>
-              <!-- <details>
-                <summary class="mb-3">Read More</summary>
-                <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eveniet ex corporis iure corrupti vitae repudiandae reprehenderit, rem deserunt quod non aspernatur, nobis debitis atque alias consequuntur? At, earum inventore.</article>
-              </details> -->
-            </div>
           </div>
         </div>
-      <!-- </div> -->
 
-      <h2 class="text-center text-white pt-5 pb-2">My Skills</h2>
+        <div class="card bg-dark">
+          <div class="card-body">
+            <i class="fa fa-code fa-4x py-4"></i>
+            <h4 class="card-title">Java App Development</h4>
+            <p class="card-text">I develop responsive desktop and mobile apps</p>
+            <!-- <details>
+                <summary class="mb-3">Read More</summary>
+                <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eveniet ex corporis iure corrupti vitae repudiandae reprehenderit, rem deserunt quod non aspernatur, nobis debitis atque alias consequuntur? At, earum inventore.</article>
+              </details> -->
+          </div>
+        </div>
+
+        <div class="card bg-dark">
+          <div class="card-body">
+            <i class="fa fa-laptop fa-4x py-4 text-center"></i>
+            <h4 class="card-title">Responsive Web Design</h4>
+            <p class="card-text">I design responsive websites and develop experiences that make people's lives simple
+            </p>
+            <!-- <details>
+                <summary class="mb-3">Read More</summary>
+                <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eveniet ex corporis iure corrupti vitae repudiandae reprehenderit, rem deserunt quod non aspernatur, nobis debitis atque alias consequuntur? At, earum inventore.</article>
+              </details> -->
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+  </section>
+
+  <section id="what" class="pt-0 pb-4 bg-dark">
+    <div class="container">
+      <h2 class="text-center text-white pt-5 pb-4">My Skills</h2>
       <div class="row justify-content-center">
-        <div class="col-md-3 mx-4 p-0 text-white">
+        <div class="col-md-3 mx-4 px-0 text-white">
           <h5 class="text-center mt-3">Front-End</h5>
 
-            <div class="d-flex">
-              <p class="flex">html</p>
-              <p class="">100%</p>
-            </div>
-            <div class="progress mb-1">
-              <div class="progress-bar bg-success" style="width: 105%;"></div>
-            </div>
+          <div class="d-flex">
+            <p class="flex">html</p>
+            <p class="">100%</p>
+          </div>
+          <div class="progress mb-1">
+            <div class="progress-bar bg-success" style="width: 105%;"></div>
+          </div>
 
           <div class="d-flex">
-              <p class="flex">css</p>
-              <p class="">90%</p>
-            </div>
-            <div class="progress mb-1">
-              <div class="progress-bar bg-success" style="width: 90%;"></div>
-            </div>
+            <p class="flex">css</p>
+            <p class="">90%</p>
+          </div>
+          <div class="progress mb-1">
+            <div class="progress-bar bg-success" style="width: 90%;"></div>
+          </div>
 
-            <div class="d-flex">
-              <p class="flex">bootstrap</p>
-              <p class="">85%</p>
-            </div>
-            <div class="progress mb-1">
-              <div class="progress-bar bg-success" style="width: 85%;"></div>
-            </div>
+          <div class="d-flex">
+            <p class="flex">bootstrap</p>
+            <p class="">85%</p>
+          </div>
+          <div class="progress mb-1">
+            <div class="progress-bar bg-success" style="width: 85%;"></div>
+          </div>
 
         </div>
         <div class="col-md-3 mx-4 p-0 text-white">
@@ -187,8 +215,6 @@
 
         </div>
       </div>
-      
-       
     </div>
   </section>
 
@@ -196,35 +222,30 @@
     <div class="container">
       <h2 class="text-center pt-5">What Have I Built?</h2>
       <p class="lead text-center pb-3">Some of my featured works</p>
-      <div class="row">
-        <div class="card-deck">
-          <div class="card">
-            <a href="https://fabulousthomas.github.io/pharmacy.store.github.io/" target="_blank">
-            <img src="img/Eric-Jun.jpg" alt="Eric-Jun Web">
-            </a>
-          </div>
-
-          <div class="card">
-            <a href="https://fabulousthomas.github.io/friendandfriend.github.io/" target="_blank">
-            <img src="img/FriendandFriend.jpg" alt="FriendandFriend Web">
-            </a>
-          </div>
+      
+      <div class="col-md-12 work-slider">
+        <div class="col-md-4 slider-image">
+          <a href="https://fabulousthomas.github.io/pharmacy.store.github.io/" target="_blank">
+            <img src="img/eric-jun.PNG" alt="ERIC JUN">
+          </a>
         </div>
-
-        <div class="card-deck mt-4">
-          <div class="card">
-            <a href="https://fabulousthomas.github.io/myquiz.github.io/" target="_blank">
-            <img src="img/Myquiz.jpg" alt="MyQuiz Web">
-            </a>
-          </div>
-
-          <div class="card">
-            <a href="">
+        <div class="col-md-4 slider-image">
+          <a href="https://fabulousthomas.github.io/friendandfriend.github.io/" target="_blank">
+            <img src="img/FriendandFriend.jpg" alt="FRIEND&FRIENDS">
+          </a>
+        </div>
+        <div class="col-md-4 slider-image">
+          <a href="https://fabulousthomas.github.io/myquiz.github.io/" target="_blank">
+            <img src="img/Myquiz.jpg" alt="MYQUIZ">
+          </a>
+        </div>
+        <div class="col-md-4 slider-image">
+          <a href="">
             <img src="img/WebApp.jpg" alt="MyQuiz WebApp">
-            </a>
-          </div>
+          </a>
         </div>
       </div>
+
     </div>
     </div>
   </section>
@@ -236,7 +257,7 @@
       <div class="row">
         <div class="col-md-6">
           <h5 class="text-white pt-5">Message Me</h5>
-            <form action="https://formspree.io/f/xknplnky" method="POST" id="my-form">
+          <form action="https://formspree.io/f/xknplnky" method="POST" id="my-form">
             <div class="form-group">
               <div class="input-group input-group-lg">
                 <input type="text" name="name" class="form-control bg-dark text-white" placeholder="Name" required>
@@ -249,7 +270,8 @@
             </div>
             <div class="form-group">
               <div class="input-group input-group-lg">
-                <input type="tel" name="phone" class="form-control bg-dark text-white" placeholder="Phone Number (Optional)">
+                <input type="tel" name="phone" class="form-control bg-dark text-white"
+                  placeholder="Phone Number (Optional)">
               </div>
             </div>
             <div class="form-group">
@@ -267,25 +289,41 @@
             </div>
             <div class="form-group">
               <div class="input-group input-group-lg">
-                <textarea class="form-control bg-dark text-white" name="message" placeholder="Message" required></textarea>
+                <textarea class="form-control bg-dark text-white" name="message" placeholder="Message"
+                  required></textarea>
               </div>
             </div>
-            <input type="submit" value="Submit" class="btn text-white ">
+            <input type="submit" value="Submit" class="btn btn-sm text-white">
           </form>
           <div id="status"></div>
         </div>
         <div class="col-md-3">
           <div class="container text-white">
             <h5 class="text-white my-4">Contact Info</h5>
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+              </path>
+            </svg>
             <h5>Address</h5>
             <p>4/6 Chiwuzo Street, Jakande Estate, Isolo, Lagos, Nigeria</p>
 
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+              </path>
+            </svg>
             <h5>Phone</h5>
             <p><a href="tel:+2348125116911" style="color: #fff;">+234 812 5116 911</a></p>
 
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+              </path>
+            </svg>
             <h5>Email</h5>
             <p><a href="mailto:thomasangel697@gmail.com" style="color: #fff;">thomasangel697@gmail.com</a></p>
           </div>
@@ -296,33 +334,30 @@
 
   <footer class="py-3">
     <div class="container text-center text-white">
-      <p>
-        <p class="lead">
-          <a href="https://web.facebook.com/thomas.angel.3348" target="blank">Facebook</a> | 
-          <a href="https://wa.me/message/UKDFSQLDQ7UEN1" target="blank">WhatsApp</a> | 
-          <a href="https://www.instagram.com/fabulousthomas27/?hl=en" target="blank">Instagram</a> | 
-          <a href="https://twitter.com/fabulous_thomas" target="blank">Twitter</a> | 
-        <a href="https://github.com/FabulousThomas" target="blank">GitHub</a></p>
-      </p>
-      <p>Copywrite &copy; 2020 - <script>
-        var CurrentYear = new Date().getFullYear();
-        document.write(CurrentYear);
-      </script> Thomas' portfolio | All rights reserved</p>
+
+        <div class="social text-white py-3">
+          <a href="https://web.facebook.com/thomas.angel.3348" target="blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/fabulousthomas27/?hl=en" target="blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/fabulous_thomas" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://wa.me/message/UKDFSQLDQ7UEN1" target="blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://github.com/FabulousThomas" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+        
+      <p class="">Copyright &copy; 2020 - <script>
+          var CurrentYear = new Date().getFullYear();
+          document.write(CurrentYear);
+        </script> Thomas' portfolio | All rights reserved</p>
     </div>
   </footer>
 
 
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
-  </script>
-
-<script src="js/emailForm.js"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<!-- SLICK JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/emailForm.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
-
 </html>

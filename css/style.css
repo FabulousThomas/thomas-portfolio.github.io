@@ -11,6 +11,13 @@
   box-sizing: border-box;
 }
 
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin: 0% !important;
+  padding: 0%;
+}
+
 body {
   font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
@@ -81,7 +88,31 @@ body {
   line-height: 1.45rem;
 }
 
-#what .container  .card-deck .card {
+#about .container .row .col-md-5 .lead a .fas{
+  font-size: 2rem;
+  color: #222222;
+  animation: changeColor 4000ms infinite !important;
+}
+
+.showcase .showcase-inner .showcase-inner-info {
+  width: 100%;
+  display: inline-block !important;
+  overflow: hidden;
+}
+
+#work .container .work-slider .slider-image {
+  display: inline-block !important;
+  overflow: hidden;
+}
+
+#about .container .row .col-md-7 .slider-wrapper .slider-image {
+  display: inline-block;
+  padding: .7rem;
+  border-radius: 5px;
+  background-color: #343a40;
+}
+
+#what .container .card-deck .card {
   background-color: var(--overlay-color);
   color: #fff;
 }
@@ -113,14 +144,14 @@ body {
   background-color: #fff !important;
 }
 
-#work .container .row .card-deck .card img {
+#work .container .work-slider .slider-image img {
   width: 100%;
   height: 100%;
 } 
 
-#work .container .row .card-deck .card img:hover {
+#work .container .work-slider .slider-image:hover {
   cursor: pointer;
-  transform: scale(1);
+  transform: scale(1.1);
   transition: 1.2s all ease-in;
 }
 
@@ -151,11 +182,25 @@ footer {
 
 footer .container > p {
   font-size: 0.85rem;
+  margin: 0%;
+  padding-top: 0.3rem;
 }
 
-footer .container > p > a {
+footer .container .social a {
+  font-size: 1.1rem;
+  padding: .4rem .6rem;
+  margin: 0rem .2rem;
   color: #fff;
-  font-size: 0.95rem;
+  border: 1px solid #fff;
+  border-radius: 5px;;
+  transition: all ease-in-out .3s;
+}
+
+footer .social a:hover {
+  padding: .7rem .8rem;
+  color: rgba(255, 255, 255, 0.856);
+  transition: all ease-in-out .3s;
+  border-radius: 0%;
 }
 
 
@@ -215,5 +260,15 @@ footer .container > p > a {
 @media(min-width:768px) {
   #about .container .mb-5 {
     margin-bottom: 40px !important;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+      color: rgb(22, 22, 22);
+  }
+  50% {
+      color: rgb(0, 114, 167);
+      transform: scaleY(1.2);
   }
 }
